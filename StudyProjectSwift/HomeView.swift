@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    var heroTestTitle = Constants.URL.testTitleURL
+      
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            AsyncImage(url: URL(string: heroTestTitle)){ image in
+                image
+                    .resizable()
+                    .scaledToFit()
+            } placeholder: {
+                ProgressView()
+            }
+            
+        }
     }
 }
 

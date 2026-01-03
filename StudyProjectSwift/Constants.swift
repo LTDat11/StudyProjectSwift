@@ -21,5 +21,9 @@ struct Constants {
         static let searchIconString = "magnifyingglass"
         static let downloadIconString = "arrow.down.to.line"
     }
+    
+    struct URL {
+        static let testTitleURL = "https://lh3.googleusercontent.com/d/1Gb5qAKr3sfprqumQ9QMuM4GwC97sv6qW=s0"
+    }
 
 }
