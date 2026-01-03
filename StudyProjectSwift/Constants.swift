@@ -13,6 +13,7 @@ struct Constants {
         static let upcomingString = "Upcoming"
         static let searchString = "Search"
         static let downloadString = "Download"
+        static let playString = "Play"
     }
     
     struct Icon {
