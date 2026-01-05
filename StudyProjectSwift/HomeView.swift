@@ -25,18 +25,14 @@ struct HomeView: View {
                     
                 } label: {
                     Text(Constants.Text.playString)
-                        .frame(width: 100, height: 50)
-                        .bold()
-                        .background {
-                            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                .stroke(lineWidth: 3)
-                        }
+                        .ghostButton()
                 }
                 
                 Button {
                     
                 } label: {
                     Text(Constants.Text.downloadString)
+                        .ghostButton()
                 }
             }
         }

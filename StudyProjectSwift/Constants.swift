@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Constants {
     struct Text {
@@ -27,4 +28,17 @@ struct Constants {
         static let testTitleURL = "https://lh3.googleusercontent.com/d/1Gb5qAKr3sfprqumQ9QMuM4GwC97sv6qW=s0"
     }
 
+}
+
+extension Text {
+    func ghostButton() -> some View{
+        self
+            .frame(width: 100, height: 50)
+            .foregroundStyle(.buttonText)
+            .bold()
+            .background {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .stroke(.buttonBorder,lineWidth: 3)
+            }
+    }
 }
