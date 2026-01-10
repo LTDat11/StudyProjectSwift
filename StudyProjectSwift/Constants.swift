@@ -15,6 +15,10 @@ struct Constants {
         static let searchString = "Search"
         static let downloadString = "Download"
         static let playString = "Play"
+        static let trendingMovieString = "Trending Movies"
+        static let trendingTVString = "Trending TV"
+        static let topRatedMvoieString = "Top Rated Movies"
+        static let topRatedTVString = "Top Rated TV"
     }
     
     struct Icon {
@@ -26,6 +30,8 @@ struct Constants {
     
     struct URL {
         static let testTitleURL = "https://lh3.googleusercontent.com/d/1Gb5qAKr3sfprqumQ9QMuM4GwC97sv6qW=s0"
+        static let testTitleURL2 = "https://lh3.googleusercontent.com/d/1HRy55F6SN5i4tKpIlnkq-ROkwyua_FlX=s0"
+        static let testTitleURL3 = "https://lh3.googleusercontent.com/d/14kjmdsnQqI1q6a-NtXft6KgSAdU7t1Nt=s0"
     }
 
 }
