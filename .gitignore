@@ -15,3 +15,5 @@ Carthage/Build/
 # macOS
 .DS_Store
 
+#API Config
+**/APIConfig.json

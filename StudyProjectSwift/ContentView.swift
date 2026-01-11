@@ -23,6 +23,10 @@ struct ContentView: View {
                 Text(Constants.Text.downloadString)
             }
         }
+        .onAppear {
+            print(APIConfig.shared.tmdbBaseURL)
+            print(APIConfig.shared.tmdbAPIKey)
+        }
     }
 }
 
