@@ -9,24 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView{
-            Tab(Constants.Text.homeString,systemImage: Constants.Icon.homeIconString){
+        TabView {
+            Tab(
+                Constants.Text.homeString,
+                systemImage: Constants.Icon.homeIconString
+            ) {
                 HomeView()
             }
-            Tab(Constants.Text.upcomingString,systemImage: Constants.Icon.upcomingIconSring){
+            Tab(
+                Constants.Text.upcomingString,
+                systemImage: Constants.Icon.upcomingIconSring
+            ) {
                 Text(Constants.Text.upcomingString)
             }
-            Tab(Constants.Text.searchString,systemImage: Constants.Icon.searchIconString){
+            Tab(
+                Constants.Text.searchString,
+                systemImage: Constants.Icon.searchIconString
+            ) {
                 Text(Constants.Text.searchString)
             }
-            Tab(Constants.Text.downloadString,systemImage: Constants.Icon.downloadIconString){
+            Tab(
+                Constants.Text.downloadString,
+                systemImage: Constants.Icon.downloadIconString
+            ) {
                 Text(Constants.Text.downloadString)
-            }
-        }
-        .onAppear {
-            if let config = APIConfig.shared {
-                print(config.tmdbBaseURL)
-                print(config.tmdbAPIKey)
             }
         }
     }
